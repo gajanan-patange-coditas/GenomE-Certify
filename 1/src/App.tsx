@@ -1,9 +1,10 @@
+import { Landing } from "./Components/Landing/Landing"
 
 export const App = () => {
-  
+
   return(
     <>
-    <h1>this is app</h1>
+    <Landing/>
     </>
   )
 }
