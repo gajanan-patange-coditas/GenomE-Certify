@@ -5,7 +5,6 @@ $accent-blue: #3b82f6;
     min-height: 100vh;
     background-color: #121214;
     color: white;
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
@@ -170,7 +169,7 @@ span {
 // ______fotoer
 
 .footer {
-    padding: 1  rem ;
+    padding: 1rem ;
     border-top: 1px solid rgba(197, 194, 194, 0.178);
     color: rgb(166, 166, 170);
     font-size: 0.9rem;

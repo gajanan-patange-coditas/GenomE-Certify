@@ -1,0 +1,26 @@
+ .registerformdiv {
+     float: left;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 50%;
+     min-height: 100vh;
+     background-color: rgb(88, 88, 202);
+ }
+
+ .registertrio {
+     display: flex;
+     flex-direction: row;
+     gap: 0.5rem
+ }
+
+ .form {
+     display: flex;
+     flex-direction: column;
+     gap: 1rem;
+ }
+
+ .inputs{
+    padding-top: 0.5rem;
+   
+ }

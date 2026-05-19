@@ -1,12 +1,11 @@
-import { Landing } from "./Components/Landing/Landing"
-import styles from './App.module.scss'
-import Login from "./Components/LoginPage/Login"
-export const App = () => {
+import { RouterProvider } from "react-router-dom";
+import { router } from "./router/router";  
+import styles from './App.module.scss';
 
-  return(
-    <>
-    <div className={styles.main}></div>
-   <Login/>
-    </>
-  )
-}
+export const App = () => {
+  return (
+    <div className={styles.main}>
+      <RouterProvider router={router} />
+    </div>
+  );
+};
