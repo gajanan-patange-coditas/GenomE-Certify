@@ -9,9 +9,10 @@ const Register = () => {
     lastName: "",
     email: "",
     password: "",
+    certficate:"",
     dateOfPassing: "",
   });
-  const [file, setFile] = useState<File | null>(null);
+ 
 
   const handleChange = (e ) => {
     const { name, value } = e.target;
@@ -20,7 +21,8 @@ const Register = () => {
       [name]: value,
     }));
   };
-
+  
+  console.log();
 
   return (
     <div className={styles.Registerpage}>
@@ -29,7 +31,7 @@ const Register = () => {
             <h2>register</h2>
           <div className={styles.registertrio}>
             <div className={styles.inputs}>
-              <select name="title" name='title' value={formData.title} required>
+              <select name="title"   value={formData.title} required>
                 <option value="select" disabled>
                   select
                 </option>
@@ -53,10 +55,10 @@ const Register = () => {
             <input type="password"  onChange={handleChange} placeholder="Enter password" name="password" value={formData.password} required/>
           </div>
           <div className={styles.inputs}>
-            <input type="file" required />
+            <input type="text" onChange={handleChange} name="certficate" value={formData.certficate} placeholder="certificate" required />
           </div>    
            <div className={styles.inputs}>
-            <input type="date" 
+            <input type="date"  
              onChange={handleChange}
             name="dateOfPassing" 
             value={formData.dateOfPassing}
