@@ -90,6 +90,7 @@ const Register = () => {
               required
             />
           </div>
+          {/* certficate code  */}
           <div className={styles.inputs}>
             <input
               type="file"
@@ -109,7 +110,7 @@ const Register = () => {
             />
           </div>
           <div className={styles.inputs}>
-            <input type="submit" required />
+            <input type="submit"  onChange={handleChange} required />
           </div>
         </form>
       </div>
