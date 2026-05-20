@@ -6,8 +6,8 @@ import Profile from "./Components/Diplomate/Profile/Profile";
 export const App = () => {
   return (
     <div className={styles.main}>
-      {/* <RouterProvider router={router} /> */}
-      <Profile/>
+      <RouterProvider router={router} />
+      {/* <Profile/> */}
     </div>
   );
 };
