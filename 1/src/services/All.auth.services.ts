@@ -7,19 +7,21 @@ import type { RegisterData } from "../Components/RegisterPage/Register.types";
     access_token: string,
     user: User
 }
-
-const registerUser = async (data: RegisterData) => {
-    try {
-        const response = await authApi.post("/register", data);
-        if (response.status === 201) {
-            alert("Registered Successfully !!");
-        }
-        if(response.status === 500) {
-            console.log("500 Internal Server Error");
-        }
-    } catch (e) {
-        console.log("error", e);
+const registerUser = async (data: FormData) => {
+  try {
+    const response = await authApi.post("CANDIDATE/registeration", data, {
+      headers: {
+        "Content-Type": "multipart/form-data",
+      },
+    });
+    
+    if (response.status === 201 || response.status === 200) {
+      alert("Registered Successfully !!");
     }
+  } catch (e) {
+    console.error("error", e);
+    alert("Registration Failed");
+  }
 }
 
 
